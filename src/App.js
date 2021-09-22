@@ -131,18 +131,18 @@ export default function App() {
         <Divider />
         <List>
 
-            <ListItem button key={"signup"} >
-              <ListItemIcon>
+            <ListItem button key={"signup"} component={Link} to="/signup/">
+              <ListItemIcon >
                 <InboxIcon />
               </ListItemIcon>
-              <Link to="/signup">Signup</Link>
+                <ListItemText primary={"Sign Up"} />
             </ListItem>
 
-            <ListItem button key={"signin"} >
-              <ListItemIcon>
+            <ListItem button key={"signin"} component={Link} to="/login/">
+              <ListItemIcon >
                 <InboxIcon />
               </ListItemIcon>
-              <Link to="/login">Login</Link>
+                <ListItemText primary={"Login"} />
             </ListItem>
 
         </List>
